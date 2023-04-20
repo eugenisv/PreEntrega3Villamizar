@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Fonarto";
+  src: url(../fonts/fonarto.ttf);
+}
+.navbar {
+  background-color: rgba(21, 25, 27, 0.8);
+  position: fixed;
+  z-index: 1000;
+}
+
+footer {
+  background-color: #212922;
+}
+
+body {
+  color: #212922;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #01A437;
+  border-color: #01A437;
+}
+
+.banner {
+  background: linear-gradient(0deg, rgba(172, 232, 148, 0.7), rgba(172, 232, 148, 0.7)), url(../img/fondo-blanco-lineas.png);
+  background-position: center;
+  background-size: cover;
+}
+.banner h2 {
+  font-size: 96px;
+}
+.banner p {
+  font-size: 40px;
+}
+
+.ingredientesIndex div {
+  height: 500px;
+  background-color: #ACE894;
+}
+.ingredientesIndex .ingrVerMas {
+  height: 500px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/ingredientes-varios.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ingredientesIndex .ingrIndex {
+  padding: 60px 0;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  border-color: #FFF;
+}
+.ingredientesIndex .ingrIndex p {
+  margin-left: 20px;
+}
+
+.encuentranosIndexRight {
+  background: url(../img/restaurante-personas-comiendo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+
+.heroNormal {
+  padding: 30px 0 30px 0;
+}
+.heroNormal .circulo {
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  background-color: #01A437;
+}
+.heroNormal p {
+  font-size: 14px;
+}
+.heroNormal h1 {
+  text-transform: uppercase;
+}
+
+.card p {
+  margin: 0;
+}
+.card .btn {
+  margin-top: 8px;
+}
+.card h2 {
+  font-size: 22px;
+}
+.card li span {
+  font-size: 22px;
+}
+.card ul {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#indexHero {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 41, 34, 0) 6.77%, #212922 100%), url(../img/burger-hero.png);
+  background-blend-mode: hard-light, normal;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+#indexHero h1 {
+  font-family: "Fonarto", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+@media (max-width: 951px) {
+  .ingredientesIndex div {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

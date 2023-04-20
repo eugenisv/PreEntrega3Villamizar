@@ -1,0 +1,151 @@
+$color-black: #212922;
+$color-trans: #F8F8F81A;
+$color-white: #FFF;
+$color-destaque: #01A437;
+$color-claro: #ACE894;
+$color-CTA: #E55934;
+$fntSize-txtNormal: 16px;
+$fntSize-txtSubttl: 22px;
+$fntSize-txtTtl: 40px;
+$fntSize-txtPeq: 14px;
+$fntSize-txtH1-desktop: 96px;
+$fntSize-txtH1-mobile: 64px;
+
+@font-face {
+    font-family: 'Fonarto';
+    src: url(../fonts/fonarto.ttf);
+}
+
+
+.navbar {
+    background-color: rgba(21, 25, 27, 0.8);
+    position: fixed;
+    z-index: 1000;
+}
+
+footer {
+    background-color: $color-black;
+}
+
+body {
+    color: $color-black;
+}
+
+.btn-primary {
+    color: $color-white;
+    background-color: $color-destaque;
+    border-color: $color-destaque;
+}
+
+.banner {
+    background: linear-gradient(0deg, rgba(172, 232, 148, 0.7), rgba(172, 232, 148, 0.7)), url(../img/fondo-blanco-lineas.png);
+    background-position: center;
+    background-size: cover;
+    h2 {
+        font-size: $fntSize-txtH1-desktop;
+    }
+    p {
+        font-size: $fntSize-txtTtl;
+    }
+}
+
+.ingredientesIndex {
+    div {
+        height: 500px;
+        background-color: $color-claro;
+    }
+    .ingrVerMas {
+        height: 500px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/ingredientes-varios.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .ingrIndex {
+        padding: 60px 0;
+        border-style: solid;
+        border-width: 0 0 0 2px;
+        border-color: $color-white;
+     
+        p {
+            margin-left: 20px;
+        }
+    }
+}
+
+.encuentranosIndexRight {
+    background: url(../img/restaurante-personas-comiendo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.heroNormal {
+    padding: 30px 0 30px 0;
+
+    .circulo {
+        height: 92px;
+        width: 92px;
+        border-radius: 50%;
+        background-color: $color-destaque;
+    }
+
+    p {
+        font-size: $fntSize-txtPeq;
+    }
+
+    h1 {
+        // font-size: $fntSize-txtH1-desktop;
+        text-transform: uppercase;
+    }
+
+}
+
+.card {
+    p {
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 8px;
+        
+    }
+
+    h2 {
+        font-size: $fntSize-txtSubttl;
+    }
+
+    li {
+        span {
+            font-size: $fntSize-txtSubttl;
+        }
+       
+    }
+
+    ul {
+        height: 400px;
+        overflow-y: scroll;
+    }
+}
+
+#indexHero {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(33, 41, 34, 0) 6.77%, #212922 100%),url(../img/burger-hero.png);
+    background-blend-mode: hard-light, normal;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+    h1 {
+        font-family: 'Fonarto', sans-serif;
+        font-size: $fntSize-txtH1-desktop;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 951px) {
+    .ingredientesIndex {
+        div {
+            height: 200px;
+        }
+    }
+}
